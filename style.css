@@ -1,0 +1,572 @@
+/*-------------------
+Common CSS
+---------------------*/
+body{
+    color: #666666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.inner-top-header-container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;   
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------------
+Top header CSS
+---------------------*/
+.header-area{
+    width: 100%;
+    clear: both;
+}
+#top-header-area{
+    background-color: red;
+    width: 100%;
+    padding: 15px 0;
+}
+.inner-top-header1{
+    overflow: hidden;
+}
+.mini-menu{
+    float: left;
+    margin-left: 2%;
+    width: 68%;
+    padding-top: 5px;
+}
+.mini-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini-menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+.mini-menu ul li a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini-menu ul li::after{
+   background: #ddd;
+   content:"";
+   position: absolute;
+   top: 6px;
+   right: -10px;
+   height: 12px;
+   width: 1px;
+}
+.mini-menu ul li:last-child:after{
+    display: none;
+ }
+.mini-menu ul li a:hover{
+    color: #ddd;
+}
+.search-area{
+    
+    float: right;
+    width: 30%;
+}
+.search-area form{
+    float: right;
+    width: 96%;
+    padding: 2%;
+    max-width: 210px;
+    background: #fff;
+    border-radius: 25px;
+}
+.search-area input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: black;
+}
+.search-area input[type="submit"]{
+    width: 23%;
+    background: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+/*-------------------
+Main header CSS
+---------------------*/
+#main-header-area{
+    width: 100%;
+    clear: both;
+}
+.inner-top-header-area{
+    overflow: hidden;  
+    padding: 40px 0; 
+}
+.logo-area{
+    float: left;
+    width: 240px;
+    margin-left: 2%;
+}
+.social-area{
+    padding: 20px;
+    float: right;
+    width: 100%;
+    max-width: 600px;
+}
+.social-area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right ;
+}
+.social-area ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.social-area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social-area ul li a i{
+    background-color: #333333;
+    border-radius: 50%;
+    width: 35px;
+    padding-top: 8px;
+    display: block;
+    text-decoration: none;
+    padding-top: 8px;
+    color: #ddd;
+    height: 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+.social-area ul li a:hover i{
+    background: #ba2e1f;
+}
+.social-area ul li a:hover i.fa-linkedin-in{
+    background: #0174B0;
+}
+.social-area ul li a:hover i.fa-twitter{
+    background: #41B7E5;
+}
+.social-area ul li a:hover i.fa-google-plus-g{
+    background: #D64134;
+}
+.social-area ul li a:hover i.fa-pinterest{
+    background: #DE2A32;
+}
+.social-area ul li a:hover i.fa-rss{
+    background: #ee802f;
+}
+
+
+/*-------------------
+Main Menu CSS
+---------------------*/
+
+#main-menu{
+    width: 100%;
+    clear: both;
+    
+}
+.inner-menu{
+    background: #333333;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner-menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+.inner-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.inner-menu ul li{
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+.inner-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+.inner-menu ul li a:hover{
+    color:  #ba2e1f;
+}
+
+.inner-menu ul li:hover  a{
+    color:  #ba2e1f;
+}
+/*DROPDOWN STYLE*/
+
+.inner-menu ul ul{
+    position: absolute;
+    background: #D64134;
+    width: 180px;
+    left: -99999999999px;
+    top: 34px;
+}
+.inner-menu ul li:hover ul{
+    position: absolute;
+    background: #D64134;
+    width: 180px;
+    left: 0;
+    top: 34px;
+}
+.inner-menu ul li:hover ul ul{
+    position: absolute;
+    background: #D64134;
+    width: 180px;
+    left: -9999999999px;
+    top: 34px;
+}
+.inner-menu ul li ul li:hover ul{
+   
+    left: 180px;
+    top: 0;
+}
+.inner-menu ul ul li{
+    margin: 0;
+    display: block;
+}
+.inner-menu ul li:hover ul li a{
+    color: #fff;
+}
+
+.inner-menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+.inner-menu ul ul li:hover ul li a{
+    background: none;
+    color: #fff;
+}
+.inner-menu ul ul li ul li a:hover{
+    color: #fff;
+    background: #333333;
+}
+.inner-menu ul li:hover a{
+    color: #ba2e1f;
+}
+
+.inner-menu ul ul ul{
+    position: absolute;
+    background: #D64134;
+    width: 180px;
+    left: -99999999999px;
+    top: 0;
+}
+
+.item img{
+    width: 100%;
+}
+
+.alignleft{
+    float: left;
+    margin-right: 15px;
+    padding-bottom: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/*--------------------
+hero area css
+----------------------*/
+#hero-area{
+    background: white;
+    margin: 0;
+    padding: 0;
+
+}
+.inner-hero{
+    overflow: hidden;
+}
+.inner-hero h2{
+    color: #666666;
+    font-size: 86px ;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner-hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner-hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.inner-hero a:hover{
+    color: black;
+}
+.inner-work{
+    overflow: hidden;
+}
+#work-area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.child-work{
+    width: 31.33%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child-work h2{
+   color: #333333;
+   font-size: 26px;
+   font-weight: normal;
+}
+.child-work p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+ }
+ .child-work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+ }
+ .child-work a:hover{
+    color: #2b2b2b
+ }
+.about-area{
+    margin-left: 0;
+}
+.about-area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service-area{
+
+}
+.child-service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child-service .service-image{
+    width: 25%;
+    float: left;
+}
+.child-service .service-text{
+    width: 75%;
+    float: right;
+}
+.child-service .service-text h3{
+   font-size: 14px;
+   font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.child-service .service-text p{
+    margin-top: 0; 
+    line-height: 1.4em;
+ }
+.testimonial-area{
+    margin-right: 0;
+}
+.child-testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child-testimonial h3{
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url(images/comment.png);
+    background-repeat: no-repeat;
+    padding: 15px 0px 15px 65px;
+}
+.child-testimonial h3 span{
+    font-weight: normal;
+}
+
+
+/*---------------------------
+footer area
+-----------------------------*/
+
+#footer-area{
+    background: #fff;
+    padding: 45px 0;
+}
+
+.inner-footer{
+    overflow: hidden;
+}
+.child-footer{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 21%;
+    float: left;
+}
+.child-footer h3{
+    border-top: 1px solid #666666;
+    color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child-footer h4{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.child-footer h4 a{
+    color: #666666;
+    float: none;
+    text-decoration: none;
+}
+.child-footer h4 a:hover{
+    color: #b92d1f;
+}
+.child-footer h6{
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+.child-footer p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.child-footer p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child-footer p a:hover{
+    
+}
+
+.child-footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.child-footer ul li{
+    background:url(img/next.png) no-repeat center left;
+    display: block;
+    border-bottom: 1px solid #666666;
+    padding-left: 18px;
+    padding-bottom: 8px;
+}
+.child-footer ul li:last-child{
+    border-bottom: 0px solid;
+}
+.child-footer ul li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child-footer ul li a:hover{
+    color: #b92d1f;
+}
+
+.child-blog p{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.child-blog a{
+    color: #b92d1f;
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.child-footer input{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 90% 
+}
+.child-footer input[type="submit"]{
+    width: 80px;
+    color: #b92d1f;
+    cursor: pointer;
+}
+.child-footer input[type="submit"]:hover{
+    background: #b92d1f;
+    color: #fff;
+}
+.child-footer textarea{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 90%
+}
+
+/*-----------------------------------
+ Copyright Area CSS
+-------------------------------------*/
+#copyright-area{
+    background: #f2f2f2;
+    padding: 20px 0;
+}
+.inner-copyright-area{
+    overflow: hidden
+}
+.inner-copyright-area p{
+    margin: 0;
+    color: #919191;
+    font-size: 12px;
+}
+.left-copyright-area{
+    float: left;
+    width: 60%
+}
+.right-copyright-area{
+    float: right;
+    text-align: right;
+    width: 40%
+}
