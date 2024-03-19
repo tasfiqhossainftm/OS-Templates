@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OS template</title>
+    <link rel="stylesheet" href="css/meanmenu.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+    <div id="mobile-menu"></div>
     <header class="header-area">
         <div id="top-header-area">
             <div class="inner-top-header1">
@@ -22,7 +25,7 @@
                     </ul>
                 </div>
                 <div class="search-area">
-                    <form action="">
+                    <form action="form.php">
                         <input type="text" placeholder="search here">
                         <input type="submit" value="">
                     </form>
@@ -38,7 +41,9 @@
                     <ul>
                         <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>                     <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>                      <li><a href=""><i class="fas fa-rss"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>                    
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>                      
+                        <li><a href=""><i class="fas fa-rss"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -101,9 +106,7 @@
             </div>
         </nav>
     </header>
-
-
-    <section id="slider-area">
+    <div id="slider-area">
         <div class="inner-slider container">
             <div class="slider-area">
                 <div class="item">
@@ -119,21 +122,16 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-    <section id="hero-area">
+    </div>
+    <div id="hero-area">
         <div class="inner-hero container">
             <img src="images/image.jpg" alt="" class="alignleft">
             <h2>A HUGE TITLE HERE</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab magni illo, consequuntur corrupti sapiente soluta molestias sunt possimus natus facere vel ratione dolorum enim tenetur ex ullam odio ipsa!</p>
             <a href="#">READ MORE</a>
         </div>
-    </section>
-
-
-    <section id="work-area">
+    </div>
+    <div id="work-area">
         <div class="inner-work container">
             <div class="about-area child-work">
                 <h2>A Little About Us</h2>
@@ -195,9 +193,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
+    </div>
     <footer id="footer-area">
         <div class="inner-footer container">
             <div class="child-footer">
@@ -246,7 +242,7 @@
             </div>
         </div>
     </footer>
-    <section id="copyright-area">
+    <div id="copyright-area">
         <div class="inner-copyright-area">
                 <div class="left-copyright-area">
                     <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
@@ -255,11 +251,10 @@
                     <p>Template by OS Templates</p>
                 </div>
         </div>
-    </section>
-
-
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/meanmenu.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

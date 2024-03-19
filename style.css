@@ -309,6 +309,7 @@ hero area css
 }
 .inner-hero{
     overflow: hidden;
+    margin: 6px;
 }
 .inner-hero h2{
     color: #666666;
